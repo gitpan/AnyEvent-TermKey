@@ -64,6 +64,8 @@ METHODS
 
   $flags = $aetk->get_flags
   $aetk->set_flags( $flags )
+  $canonflags = $aetk->get_canonflags
+  $aetk->set_canonflags( $canonflags )
   $msec = $aetk->get_waittime
   $aetk->set_waittime( $msec )
   $str = $aetk->get_keyname( $sym )

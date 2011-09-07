@@ -8,7 +8,7 @@ package AnyEvent::TermKey;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Carp;
 
@@ -165,6 +165,10 @@ sub termkey
 
 =head2 $aetk->set_flags( $flags )
 
+=head2 $canonflags = $aetk->get_canonflags
+
+=head2 $aetk->set_canonflags( $canonflags )
+
 =head2 $msec = $aetk->get_waittime
 
 =head2 $aetk->set_waittime( $msec )
@@ -194,6 +198,8 @@ class. For more detail, see the L<Term::TermKey> documentation.
 foreach my $method (qw(
    get_flags
    set_flags
+   get_canonflags
+   set_canonflags
    get_waittime
    set_waittime
    get_keyname
